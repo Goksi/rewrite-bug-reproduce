@@ -91,7 +91,7 @@ public class ExampleRecipe extends Recipe {
           .imports("com.fasterxml.jackson.databind.ObjectMapper",
               "tech.goksi.bug.util.ObjectMapperSupplier")
           .javaParser(
-              JavaParser.fromJavaVersion().classpathFromResources(ctx, "jackson-databind-21.7.3",
+              JavaParser.fromJavaVersion().classpathFromResources(ctx, "jackson-databind-2.17.3",
                   "rewrite-bug-reproduce-1.0-SNAPSHOT"))
           .build();
       List<JavaTemplate> templates = getCursor().getNearestMessage(TEMPLATE_KEY, new ArrayList<>());
